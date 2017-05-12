@@ -1,7 +1,7 @@
 .drawer {
     overflow : visible ;
     width : 25% !important ;
-    height : 400px !important ;
+    height : 260px !important ;
 }
 
 .emoji-dialog {
@@ -36,11 +36,11 @@
 .column:nth-child(2) {
     margin-top : 60px !important ;
 }
-  
+
 .column:nth-child(3) {
     position : fixed !important ;
-    width : 25% !important ; 
-    top : 390px !important ;
+    width : 25% !important ;
+    top : 250px !important ;
     height : 100% ;
     padding-left : 10px !important ;
 }
@@ -50,7 +50,7 @@
     flex : 1 1 0 !important ;
 }
 
-/* 
+/*
 注意！　ニコニコ連携へのリンクを消す。
 ニコニコ連携をしたいときは一度ユーザーCSSを無効化すること
 */
