@@ -4,11 +4,15 @@
     "version": "1.0",
 
     "description": "A simple CSS modification for mastodon",
-    
+
 
     "content_scripts": [
         {
-            "matches": ["https://friends.nico/*"],
+            "matches": [
+              "https://friends.nico/*",
+              "https://mstdn.jp/*",
+              "https://pawoo.net/*"
+            ],
             "css": ["style.css"],
             "js": ["script.js"]
         }
