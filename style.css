@@ -1,10 +1,3 @@
-.drawer
-{
-  overflow: visible;
-  width: 25% !important;
-  height: 260px !important;
-}
-
 .emoji-dialog
 {
   z-index: 1 !important;
@@ -15,6 +8,24 @@
   height: 90% !important;
 }
 
+/* ワイド表示のときだけレイアウトを調整する */
+@media screen and (min-width: 1025px)
+{
+
+.drawer
+{
+  overflow: visible;
+  width: 25% !important;
+  height: 260px !important;
+}
+
+.search
+{
+  position: absolute !important; /* if wide */
+  width: 20% !important; /* if wide */
+  left: 25% !important; /* if wide */
+}
+
 .drawer__header
 {
   position: absolute !important;
@@ -23,26 +34,22 @@
   margin-left: 1em;
 }
 
-.search
-{
-  position: absolute !important;
-  width: 20% !important;
-  left: 25% !important;
-}
-
 /* LTL, FTL */
-.column:nth-child(1) {
+.column:nth-child(1)
+{
   flex: 1 1 0 !important;
 }
 
 /* ホーム */
-.column:nth-child(2) {
+.column:nth-child(2)
+{
   flex: 1 1 0 !important;
   margin-top: 60px !important;
 }
 
 /* 通知 */
-.column:nth-child(3) {
+.column:nth-child(3)
+{
   flex: 1 1 0 !important;
   position: fixed !important;
   width: 25% !important;
@@ -52,20 +59,26 @@
 }
 
 /* スタート */
-.column:nth-child(3) + div {
+.column:nth-child(3) + div
+{
   flex: 1 1 0 !important;
 }
 
 /* アカウント連携のリンクを隠す */
-div.nico-connect-account {
+div.nico-connect-account
+{
   display : none !important;
 }
 
 /* お知らせを隠す */
-ul.announcements {
+ul.announcements
+{
   display : none !important;
 }
 
-div.column-icon.collapsable + div {
+div.column-icon.collapsable + div
+{
   overflow : scroll !important;
+}
+
 }
