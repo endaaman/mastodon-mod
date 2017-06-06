@@ -8,6 +8,30 @@
   height: 90% !important;
 }
 
+/* デカニコるボタン表示用のマージン */
+.column[aria-labelledby="ローカルタイムライン"] .status__content
+{
+  margin-right: 40px !important;
+}
+
+/* ニコるボタンの巨大化 */
+.column[aria-labelledby="ローカルタイムライン"] .status button[title="ニコる"]
+{
+  position: absolute !important;
+  top: 30px !important;
+  left: calc(100% - 45px) !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+
+/* ニコる君のアイコンサイズの調整 */
+.column[aria-labelledby="ローカルタイムライン"] .status button[title="ニコる"] i
+{
+  width: 30px !important;
+  height: 30px !important;
+}
+
+
 /* ワイド表示のときだけレイアウトを調整する */
 @media screen and (min-width: 1025px)
 {
@@ -16,22 +40,28 @@
 {
   overflow: visible;
   width: 25% !important;
-  height: 260px !important;
+  height: 370px !important;
 }
 
-.search
-{
-  position: absolute !important; /* if wide */
-  width: 20% !important; /* if wide */
-  left: 25% !important; /* if wide */
-}
+/* .search */
+/* { */
+/*   position: absolute !important; */
+/*   width: 20% !important; */
+/*   left: 25% !important; */
+/* } */
 
-.drawer__header
+/* .drawer__header */
+/* { */
+/*   position: absolute !important; */
+/*   width: 15% !important; */
+/*   left: 45% !important; */
+/*   margin-left: 1em; */
+/* } */
+
+
+.column
 {
-  position: absolute !important;
-  width: 15% !important;
-  left: 45% !important;
-  margin-left: 1em;
+  width: 100% !important;
 }
 
 /* LTL, FTL */
@@ -44,7 +74,7 @@
 .column:nth-child(2)
 {
   flex: 1 1 0 !important;
-  margin-top: 60px !important;
+  /* margin-top: 60px !important; */
 }
 
 /* 通知 */
@@ -53,7 +83,7 @@
   flex: 1 1 0 !important;
   position: fixed !important;
   width: 25% !important;
-  top: 250px !important;
+  top: 360px !important;
   height: 100% ;
   padding-left: 10px !important;
 }
