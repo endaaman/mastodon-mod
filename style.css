@@ -40,23 +40,25 @@
 {
   overflow: visible;
   width: 25% !important;
-  height: 370px !important;
+  height: 260px !important;
+  contain: none !important ;
 }
 
-/* .search */
-/* { */
-/*   position: absolute !important; */
-/*   width: 20% !important; */
-/*   left: 25% !important; */
-/* } */
+.search
+{
+  position: absolute !important;
+  width: 20% !important;
+  left: 25% !important;
+  padding-left: 5px !important;
+}
 
-/* .drawer__header */
-/* { */
-/*   position: absolute !important; */
-/*   width: 15% !important; */
-/*   left: 45% !important; */
-/*   margin-left: 1em; */
-/* } */
+.drawer__header
+{
+  position: absolute !important;
+  width: 15% !important;
+  left: 45% !important;
+  margin-left: 1em;
+}
 
 
 .column
@@ -74,7 +76,7 @@
 .column:nth-child(2)
 {
   flex: 1 1 0 !important;
-  /* margin-top: 60px !important; */
+  margin-top: 60px !important;
 }
 
 /* 通知 */
@@ -83,7 +85,7 @@
   flex: 1 1 0 !important;
   position: fixed !important;
   width: 25% !important;
-  top: 360px !important;
+  top: 250px !important;
   height: 100% ;
   padding-left: 10px !important;
 }
