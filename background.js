@@ -207,3 +207,14 @@ chrome.contextMenus.create({
     alert(convertToOrigin(param.selectionText))
   }
 })
+
+chrome.contextMenus.create({
+  contexts: ['editable'],
+  title: 'ネイティオ語に変換',
+  onclick: function(param, tab) {
+    const twotwo = convertToTwotwo(param.selectionText)
+    chrome.tabs.sendMessage(tab.id, {
+      text: twotwo
+    })
+  }
+})
