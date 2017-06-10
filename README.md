@@ -1,9 +1,12 @@
-# Mastodon MOD
+# ますとどん もっど
 
-MastodonのUIを変更して4カラムを画面いっぱいに4分割してリフローさせる簡単なCSSの変更をするChromium Extension。
+[GitHub - EzoeRyou/mastodon-mod: マストドンのUIを変更する小さなCSS](https://github.com/EzoeRyou/mastodon-mod)をいろいろ改造してます
 
-Firefoxへの対応は面倒なのでやっていない。
+- カラムを広げる
+- MathJaxの数式変換
+- デカニコるボタン
+- ネイティオ語翻訳・入力機能
 
-friends.nicoにしか対応させていないので、ほかのマストドンのインスタンスに使う場合はmanifest.jsonのpermissionとcontent_scriptのURLを追加すること。
-
-
+## todo 
+- MathJax機能のtoggle
+- デカニコるボタンのtoggle
