@@ -1,24 +1,28 @@
 {
-    "manifest_version": 2,
-    "name": "Mastodon MOD",
-    "version": "1.0",
-
-    "description": "A simple CSS modification for mastodon",
-
-
-    "content_scripts": [
-        {
-            "matches": [
-              "https://friends.nico/*",
-              "https://mstdn.jp/*",
-              "https://pawoo.net/*"
-            ],
-            "css": ["style.css"],
-            "js": ["script.js"]
-        }
-    ],
-
-    "permissions": [
-        "https://friends.nico/web/*"
-    ]
+  "manifest_version": 2,
+  "name": "Mastodon MOD",
+  "version": "1.0",
+  "description": "A simple CSS modification for mastodon",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://friends.nico/*",
+        "https://mstdn.jp/*",
+        "https://pawoo.net/*"
+      ],
+      "css": ["style.css"],
+      "js": [
+        "mathjax.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "contextMenus",
+    "https://friends.nico/*",
+    "https://mstdn.jp/*",
+    "https://pawoo.net/*"
+  ],
+  "background": {
+    "scripts": ["twotwo.js"]
+  }
 }
