@@ -8,30 +8,6 @@
   height: 90% !important;
 }
 
-/* デカニコるボタン表示用のマージン */
-/* .column[aria-labelledby="ローカルタイムライン"] .status__content */
-/* { */
-/*   margin-right: 40px !important; */
-/* } */
-
-/* ニコるボタンの巨大化 */
-/* .column[aria-labelledby="ローカルタイムライン"] .status button[title="ニコる"] */
-/* { */
-/*   position: absolute !important; */
-/*   top: 30px !important; */
-/*   left: calc(100% - 45px) !important; */
-/*   width: 40px !important; */
-/*   height: 40px !important; */
-/* } */
-
-/* ニコる君のアイコンサイズの調整 */
-/* .column[aria-labelledby="ローカルタイムライン"] .status button[title="ニコる"] i */
-/* { */
-/*   width: 30px !important; */
-/*   height: 30px !important; */
-/* } */
-
-
 /* ワイド表示のときだけレイアウトを調整する */
 @media screen and (min-width: 1025px)
 {
