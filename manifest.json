@@ -12,8 +12,7 @@
       ],
       "css": ["style.css"],
       "js": [
-        "content.js",
-        "mathjax.js"
+        "content.js"
       ]
     }
   ],
